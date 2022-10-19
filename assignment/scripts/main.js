@@ -26,10 +26,13 @@ let subtract = function subtractNumbers(number1, number2){
 }
 document.querySelector("#subtractNumbers").addEventListener.onclick = difference;
 
-let multiply = "";
 
-multiply = () => {
-  return ;
+function multiply = (factor1, factor2) => {
+  return factor1 * factor2  ;
+}
+
+function multiplyNumbers = () =>{
+
 }
 
 document.getElementById("product").innerHTML = multiply();

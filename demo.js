@@ -1,4 +1,4 @@
-const myName = name => name;
+/*const myName = name => name;
 console.log(myName("angelica"));
 
 const yourName = (name, message) => {
@@ -46,5 +46,34 @@ class shepard extends dog{
 
 let shep1 = new shepard("bosco", "black");
 console.log(shep1.name);
-shep1.run();
+shep1.run();*/
 // inheriting class
+
+const myPromise = new Promise(function(myResolve, myReject){
+    setTimeout(function(){myResolve("keep up the good work!")}, 3000)
+})
+
+myPromise.then(function(value){
+    console.log(value);
+})
+
+async function myFunction(){
+    console.log("hello Team");
+}
+myFunction().then(
+    function(value){}
+)
+
+async function myDisplay(){
+    let myPromise= new Promise(function(resolve){
+        setTimeout(function(){resolve("you are almost there")}, 6000);
+    })
+    console.log(await myPromise);
+
+}
+
+myDisplay();
+
+let myArr= [2, 4, 6, 8]
+const myMap= myArr.map(num => num * 2);
+console.log(myMap);
